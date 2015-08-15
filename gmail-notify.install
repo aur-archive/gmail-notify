@@ -1,0 +1,11 @@
+post_install() {
+echo "Copy the file /usr/share/gmail-notify/notifier.conf.sample to your home directory
+( ~/.notifier.conf ) and make sure only you have read access to the file with 
+chmod 600 ~/.notifier.conf"
+}
+
+post_upgrade() {
+
+echo "Make sure only you have read access on ~/.notifier.conf with chmod 600 ~/.notifier.conf"
+
+}
